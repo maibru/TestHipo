@@ -95,7 +95,7 @@ server <- function(input, output) {
       
       # draw the histogram 
       hist(result()$stT,main="",freq=FALSE,breaks=30,
-           xlab=expression(bar(Y)[1.]-bar(Y)[2.]),
+           xlab="T",
            axes=FALSE,ylab="",xlim=c(result()$xmin,
            result()$xmax),col="skyblue1",
            ylim=c(0,dt(0,df=(input$n1+input$n2-2))))
